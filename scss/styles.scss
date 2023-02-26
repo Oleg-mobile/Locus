@@ -1,0 +1,15 @@
+@import 'fonts.scss', 'vars.scss';
+
+body {
+	font-family: Poppins;
+}
+
+.container-fluid {
+	padding: 85px 142px 334px 166px;
+}
+
+// Components
+@import 'components/btn';
+
+// Sections
+@import 'sections/header', 'sections/main', 'sections/how', 'sections/footer';

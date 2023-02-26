@@ -1,0 +1,30 @@
+.main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 120px;
+
+	&__content {
+		max-width: 743px;
+		margin-right: 71px;
+	}
+
+	&__title {
+		color: $header-color;
+		font-size: 70px;
+		font-weight: 800;
+		line-height: 100px;
+		margin-bottom: 50px;
+	}
+
+	&__text {
+		color: $text-color;
+		font-size: 30px;
+		font-weight: normal;
+		line-height: 50px;
+		margin-bottom: 50px;
+	}
+
+	&__img {
+	}
+}

@@ -1,0 +1,22 @@
+.mybtn {
+	background-color: $primary-color;
+	border: 1px solid $primary-color;
+	border-radius: 15px;
+	color: $white-color;
+	padding: 21px 80px;
+	cursor: pointer;
+	transition: all linear 200ms;
+	font-size: 25px;
+	font-weight: 500;
+
+	&:hover {
+		background-color: transparent;
+		color: $primary-color;
+	}
+
+	&__shape_onecorner {
+		font-weight: bold;
+		border-radius: 20px;
+		border-bottom-left-radius: 0px;
+	}
+}

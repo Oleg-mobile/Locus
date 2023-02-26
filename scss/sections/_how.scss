@@ -1,0 +1,62 @@
+.how {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 150px;
+
+	&__title {
+		text-align: center;
+		color: $header-color;
+		font-size: 70px;
+		font-weight: 800;
+		line-height: 100px;
+		margin-bottom: 20px;
+	}
+
+	&__text {
+		text-align: center;
+		max-width: 506px;
+		color: $text-color;
+		font-size: 30px;
+		font-weight: normal;
+		line-height: 50px;
+		margin-bottom: 71px;
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 150px;
+
+		&__img {
+		}
+
+		&__block {
+			max-width: 549px;
+			max-height: 350px;
+			padding: 70px 106px 106px 89px;
+			background-color: $background-how;
+		}
+
+		&__text {
+			color: $text-how;
+			font-size: 20px;
+			font-weight: 500;
+			line-height: 30px;
+			margin-bottom: 41px;
+		}
+
+		&__see {
+			color: $text-how;
+			font-size: 20px;
+			font-weight: bold;
+		}
+	}
+
+	&__mybtn {
+		position: absolute;
+		top: 1645px;
+		left: 1165px;
+	}
+}

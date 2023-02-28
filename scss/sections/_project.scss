@@ -1,0 +1,61 @@
+.project {
+	margin-bottom: 250px;
+
+	&__preview {
+		text-align: center;
+	}
+
+	&__preview-title {
+		font-size: 70px;
+		font-weight: 800;
+		color: $header-color;
+		margin-bottom: 20px;
+	}
+
+	&__preview-text {
+		font-size: 30px;
+		font-weight: normal;
+		color: $text-color;
+		margin-bottom: 51px;
+	}
+
+	&__blocks {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 94px;
+	}
+
+	&__block {
+		& + & {
+			margin-left: 120px;
+		}
+	}
+
+	&__block-img {
+		max-width: 450px;
+	}
+
+	&__block-content {
+		max-width: 453px;
+	}
+
+	&__block-title {
+		color: $primary-color;
+		font-size: 40px;
+		font-weight: bold;
+		margin-bottom: 5px;
+	}
+
+	&__block-text {
+		color: $text-mission;
+		font-size: 20px;
+		font-weight: 500;
+		margin-bottom: 35px;
+	}
+}
+
+.marg_top {
+	margin-bottom: 0px;
+	margin-top: 35px;
+}

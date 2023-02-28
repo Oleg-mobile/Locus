@@ -1,0 +1,36 @@
+.contact {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 240px;
+
+	&__content {
+		max-width: 398px;
+
+		&__header {
+			color: $header-color;
+			font-size: 70px;
+			font-weight: 800;
+			margin-bottom: 10px;
+		}
+
+		&__text {
+			color: $text-mission;
+			font-size: 25px;
+			font-weight: 500;
+			margin-bottom: 37px;
+		}
+	}
+
+	&__form {
+		&__text {
+			color: $text-mission;
+			font-size: 25px;
+			font-weight: 500;
+		}
+	}
+}
+
+.lineleft {
+	margin-left: 0px;
+}

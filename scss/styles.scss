@@ -9,8 +9,9 @@ body {
 }
 
 // Components
-@import 'components/btn';
+@import 'components/btn', 'components/card', 'components/line';
 
 // Sections
 @import 'sections/header', 'sections/main', 'sections/how', 'sections/mission',
+	'sections/project', 'sections/testimonial', 'sections/contact',
 	'sections/footer';

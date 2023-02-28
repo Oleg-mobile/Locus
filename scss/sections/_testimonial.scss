@@ -1,0 +1,83 @@
+.testimonial {
+	&__header {
+		text-align: center;
+		color: $header-color;
+		font-size: 70px;
+		font-weight: 800;
+		margin-bottom: 22px;
+	}
+
+	&__cards {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 62px;
+
+		&__item {
+			max-width: 300px;
+
+			& + & {
+				margin-left: 60px;
+			}
+		}
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 240px;
+
+		&__img {
+			max-width: 615px;
+		}
+
+		&__content {
+			max-width: 997px;
+			max-height: 700px;
+			padding: 51px 107px 119px 135px;
+			background-color: $background-how;
+			//background-image: url(img/geulis-img.svg);
+
+			&__indicators {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 122px;
+
+				&__item {
+					max-width: 300px;
+
+					&__header {
+						color: $primary-color;
+						font-size: 70px;
+						font-weight: 800;
+					}
+
+					&__text {
+						color: $primary-color;
+						font-size: 30px;
+						font-weight: 600;
+					}
+
+					& + & {
+						margin-left: 100px;
+					}
+				}
+			}
+
+			&__text {
+				color: $text-mission;
+				font-size: 25px;
+				font-weight: 500;
+				margin-bottom: 60px;
+			}
+
+			&__roscoe {
+				color: $primary-color;
+				font-size: 25px;
+				font-weight: 500;
+			}
+		}
+	}
+}

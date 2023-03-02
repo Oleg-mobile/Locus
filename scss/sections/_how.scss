@@ -35,6 +35,8 @@
 		}
 
 		&__block {
+			border-top-right-radius: 10px;
+			border-bottom-right-radius: 10px;
 			max-width: 549px;
 			max-height: 350px;
 			padding: 70px 106px 89px 115px;
@@ -56,11 +58,23 @@
 		}
 	}
 
-	&__mybtn {
+	&__btn-how {
+		border: none;
+		padding: 0px;
+		background: none;
+		background-image: url('/img/how_btn.svg');
+		cursor: pointer;
 		position: absolute;
-		top: 472px;
-		//left: 1165px;
+		top: 488px;
 		left: 66.6%;
 		transform: translateX(-50%);
+
+		&:hover {
+			width: 130px;
+			height: 130px;
+			top: 473px;
+			background: url('/img//how_img_halo.svg');
+			background-position: center;
+		}
 	}
 }

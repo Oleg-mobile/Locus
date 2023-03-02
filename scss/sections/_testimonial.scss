@@ -1,5 +1,5 @@
 .testimonial {
-	&__header {
+	&__title {
 		text-align: center;
 		color: $header-color;
 		font-size: 70px;
@@ -13,10 +13,10 @@
 		align-items: center;
 		margin-bottom: 62px;
 
-		&__item {
+		.card {
 			max-width: 300px;
 
-			& + & {
+			& + .card {
 				margin-left: 60px;
 			}
 		}
@@ -28,56 +28,65 @@
 		justify-content: center;
 		margin-bottom: 240px;
 
-		&__img {
+		&-img {
 			max-width: 615px;
 		}
+	}
 
-		&__content {
-			max-width: 997px;
-			max-height: 700px;
-			padding: 51px 107px 119px 135px;
-			background-color: $background-how;
-			//background-image: url(img/geulis-img.svg);
+	&__content {
+		max-width: 997px;
+		max-height: 700px;
+		padding: 51px 107px 119px 135px;
+		background-color: $background-how;
+		background-image: url('/img/quote-img.svg');
+		background-repeat: no-repeat;
+		background-position: 11% 51.5%;
 
-			&__indicators {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				margin-bottom: 122px;
+		&__indicators {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 122px;
 
-				&__item {
-					max-width: 300px;
+			&__item {
+				max-width: 300px;
 
-					&__header {
-						color: $primary-color;
-						font-size: 70px;
-						font-weight: 800;
-					}
+				&-title {
+					color: $primary-color;
+					font-size: 70px;
+					font-weight: 800;
+				}
 
-					&__text {
-						color: $primary-color;
-						font-size: 30px;
-						font-weight: 600;
-					}
+				&-text {
+					color: $primary-color;
+					font-size: 30px;
+					font-weight: 600;
+				}
 
-					& + & {
-						margin-left: 100px;
-					}
+				& + & {
+					margin-left: 100px;
 				}
 			}
+		}
 
-			&__text {
-				color: $text-mission;
-				font-size: 25px;
-				font-weight: 500;
-				margin-bottom: 60px;
-			}
+		&__text {
+			color: $text-mission;
+			font-size: 25px;
+			font-weight: 500;
+			margin-bottom: 60px;
+		}
 
-			&__roscoe {
-				color: $primary-color;
-				font-size: 25px;
-				font-weight: 500;
-			}
+		&__roscoe {
+			color: $primary-color;
+			font-size: 25px;
+			font-weight: 500;
+		}
+
+		&__quote-img {
+			position: absolute;
+			top: 4828px;
+			left: 48.5%;
+			transform: translateX(-50%);
 		}
 	}
 }

@@ -112,11 +112,18 @@
 						</p>
 						<span class="how__info__see">S E E V I D E O</span>
 					</div>
-					<img
-						class="how__mybtn"
-						src="img/how_btn.svg"
-						alt="Button"
-					/>
+
+					<button
+						class="how__btn-how"
+						type="submit"
+						data-bs-toggle="modal"
+						data-bs-target="#howModal"
+					>
+						<img
+							src="img/how_btn.svg"
+							alt="Button"
+						/>
+					</button>
 				</div>
 			</section>
 
@@ -202,39 +209,39 @@
 			</section>
 
 			<section class="testimonial">
-				<h1 class="testimonial__header">Testimonial</h1>
+				<h1 class="testimonial__title">Testimonial</h1>
 				<div class="testimonial__cards">
-					<div class="testimonial__cards__item card">
+					<div class="card">
 						<img
 							src="img/klamby-img.svg"
 							alt="KLAMBY"
 						/>
 					</div>
-					<div class="testimonial__cards__item card">
+					<div class="card">
 						<img
 							src="img/mayoutfit-img.svg"
 							alt="Mayoutfit"
 						/>
 					</div>
-					<div class="testimonial__cards__item card">
+					<div class="card">
 						<img
 							src="img/zalora-img.svg"
 							alt="Zalora"
 						/>
 					</div>
-					<div class="testimonial__cards__item card">
+					<div class="card">
 						<img
 							src="img/geulis-img.svg"
 							alt="Geulis"
 						/>
 					</div>
-					<div class="testimonial__cards__item card">
+					<div class="card">
 						<img
 							src="img/zara-img.jpg"
 							alt="Zara"
 						/>
 					</div>
-					<div class="testimonial__cards__item card">
+					<div class="card">
 						<img
 							src="img/ostin-img.png"
 							alt="Ostin"
@@ -243,62 +250,56 @@
 				</div>
 				<div class="testimonial__info">
 					<img
-						class="testimonial__info__img"
+						class="testimonial__info-img"
 						src="img/testimonial-img.svg"
 						alt="Testimonial-img"
 					/>
-					<div class="testimonial__info__content">
-						<div class="testimonial__info__content__indicators">
-							<div
-								class="testimonial__info__content__indicators__item"
-							>
+					<div class="testimonial__content">
+						<div class="testimonial__content__indicators">
+							<div class="testimonial__content__indicators__item">
 								<h1
-									class="testimonial__info__content__indicators__item__header"
+									class="testimonial__content__indicators__item-title"
 								>
 									105
 								</h1>
 								<p
-									class="testimonial__info__content__indicators__item__text"
+									class="testimonial__content__indicators__item-text"
 								>
 									project done
 								</p>
 							</div>
-							<div
-								class="testimonial__info__content__indicators__item"
-							>
+							<div class="testimonial__content__indicators__item">
 								<h1
-									class="testimonial__info__content__indicators__item__header"
+									class="testimonial__content__indicators__item-title"
 								>
 									12
 								</h1>
 								<p
-									class="testimonial__info__content__indicators__item__text"
+									class="testimonial__content__indicators__item-text"
 								>
 									years of experience
 								</p>
 							</div>
-							<div
-								class="testimonial__info__content__indicators__item"
-							>
+							<div class="testimonial__content__indicators__item">
 								<h1
-									class="testimonial__info__content__indicators__item__header"
+									class="testimonial__content__indicators__item-title"
 								>
 									10+
 								</h1>
 								<p
-									class="testimonial__info__content__indicators__item__text"
+									class="testimonial__content__indicators__item-text"
 								>
 									big company partnership
 								</p>
 							</div>
 						</div>
-						<p class="testimonial__info__content__text">
+						<p class="testimonial__content__text">
 							"Not able to tell you how happy I am with interior
 							design. Interior design has completely surpassed our
 							expectations. Interior design saved my business.
 							Interior design is worth much more than I paid."
 						</p>
-						<span class="testimonial__info__content__roscoe"
+						<span class="testimonial__content__roscoe"
 							>- Roscoe</span
 						>
 					</div>
@@ -321,6 +322,40 @@
 					</button>
 				</div>
 			</section>
+		</div>
+
+		<!-- Modal -->
+		<div
+			class="modal fade"
+			id="howModal"
+			tabindex="-1"
+		>
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1
+							class="modal-title fs-5"
+							id="exampleModalLabel"
+						>
+							How it works
+						</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<video
+							src="videos/SashaDance.mp4"
+							controls
+							preload="auto"
+							width="465"
+						></video>
+					</div>
+				</div>
+			</div>
 		</div>
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"

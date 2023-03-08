@@ -68,13 +68,15 @@
 		top: 488px;
 		left: 66.6%;
 		transform: translateX(-50%);
+		transition: background linear 200ms;
+		width: 130px;
+		height: 130px;
+		background-position: center;
+		background-repeat: no-repeat;
 
 		&:hover {
-			width: 130px;
-			height: 130px;
-			top: 473px;
-			background: url('/img//how_img_halo.svg');
-			background-position: center;
+			//top: 473px;
+			background-image: url('/img//how_img_halo.svg');
 		}
 	}
 }

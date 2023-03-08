@@ -21,6 +21,11 @@
 			href="img/logo.ico"
 			type="image/x-icon"
 		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<title>Locus</title>
 		<link
 			rel="stylesheet"
@@ -44,6 +49,7 @@
 							<a
 								class="header__link"
 								href="#"
+								title="Home"
 								>Home</a
 							>
 						</li>
@@ -51,6 +57,7 @@
 							<a
 								class="header__link"
 								href="#"
+								title="Contact"
 								>Contact</a
 							>
 						</li>
@@ -58,6 +65,7 @@
 							<a
 								class="header__link"
 								href="#"
+								title="Location"
 								>Location</a
 							>
 						</li>
@@ -65,6 +73,7 @@
 							<a
 								class="header__link"
 								href="#"
+								title="About Us"
 								>About Us</a
 							>
 						</li>
@@ -210,44 +219,47 @@
 
 			<section class="testimonial">
 				<h1 class="testimonial__title">Testimonial</h1>
-				<div class="testimonial__cards">
-					<div class="card">
-						<img
-							src="img/klamby-img.svg"
-							alt="KLAMBY"
-						/>
-					</div>
-					<div class="card">
-						<img
-							src="img/mayoutfit-img.svg"
-							alt="Mayoutfit"
-						/>
-					</div>
-					<div class="card">
-						<img
-							src="img/zalora-img.svg"
-							alt="Zalora"
-						/>
-					</div>
-					<div class="card">
-						<img
-							src="img/geulis-img.svg"
-							alt="Geulis"
-						/>
-					</div>
-					<div class="card">
-						<img
-							src="img/zara-img.jpg"
-							alt="Zara"
-						/>
-					</div>
-					<div class="card">
-						<img
-							src="img/ostin-img.png"
-							alt="Ostin"
-						/>
+				<div class="swiper testimonial__swiper">
+					<div class="testimonial__cards swiper-wrapper">
+						<div class="card swiper-slide">
+							<img
+								src="img/klamby-img.svg"
+								alt="KLAMBY"
+							/>
+						</div>
+						<div class="card swiper-slide">
+							<img
+								src="img/mayoutfit-img.svg"
+								alt="Mayoutfit"
+							/>
+						</div>
+						<div class="card swiper-slide">
+							<img
+								src="img/zalora-img.svg"
+								alt="Zalora"
+							/>
+						</div>
+						<div class="card swiper-slide">
+							<img
+								src="img/geulis-img.svg"
+								alt="Geulis"
+							/>
+						</div>
+						<div class="card swiper-slide">
+							<img
+								src="img/zara-img.jpg"
+								alt="Zara"
+							/>
+						</div>
+						<div class="card swiper-slide">
+							<img
+								src="img/ostin-img.png"
+								alt="Ostin"
+							/>
+						</div>
 					</div>
 				</div>
+
 				<div class="testimonial__info">
 					<img
 						class="testimonial__info-img"
@@ -362,5 +374,74 @@
 			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
 			crossorigin="anonymous"
 		></script>
+
+		<div class="swiper mySwiper testimonial">
+			<div class="swiper-wrapper testimonial__cards">
+				<div class="card">
+					<img
+						src="img/zara-img.jpg"
+						alt="Zara"
+					/>
+				</div>
+
+				<div class="swiper-slide card">
+					<img
+						src="img/zara-img.jpg"
+						alt="Zara"
+					/>
+				</div>
+
+				<div class="swiper-slide card">
+					<img
+						src="img/zara-img.jpg"
+						alt="Zara"
+					/>
+				</div>
+
+				<div class="swiper-slide card">
+					<img
+						src="img/zara-img.jpg"
+						alt="Zara"
+					/>
+				</div>
+
+				<div class="swiper-slide card">
+					<img
+						src="img/zara-img.jpg"
+						alt="Zara"
+					/>
+				</div>
+
+				<div class="swiper-slide card">
+					<img
+						src="img/zara-img.jpg"
+						alt="Zara"
+					/>
+				</div>
+
+				<div class="swiper-slide card">
+					<img
+						src="img/zara-img.jpg"
+						alt="Zara"
+					/>
+				</div>
+			</div>
+			<!-- <div class="swiper-pagination"></div> -->
+		</div>
+
+		<script>
+			let swiper = new Swiper('.mySwiper', {
+				slidesPerView: 6,
+				spaceBetween: 30,
+				loop: true,
+				freeMode: false,
+				freeModeMomentum: false,
+				autoplay: {
+					delay: 1,
+					disableOnInteraction: false,
+				},
+				speed: 5000,
+			});
+		</script>
 	</body>
 </html>

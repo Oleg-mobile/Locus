@@ -123,7 +123,7 @@
 					</div>
 
 					<button
-						class="how__btn-how"
+						class="btn-play"
 						type="submit"
 						data-bs-toggle="modal"
 						data-bs-target="#howModal"
@@ -219,43 +219,58 @@
 
 			<section class="testimonial">
 				<h1 class="testimonial__title">Testimonial</h1>
-				<div class="swiper testimonial__swiper">
+				<div
+					id="testimonial-swiper"
+					class="swiper"
+				>
 					<div class="testimonial__cards swiper-wrapper">
-						<div class="card swiper-slide">
-							<img
-								src="img/klamby-img.svg"
-								alt="KLAMBY"
-							/>
+						<div class="swiper-slide">
+							<div class="card">
+								<img
+									src="img/klamby-img.svg"
+									alt="KLAMBY"
+								/>
+							</div>
 						</div>
-						<div class="card swiper-slide">
-							<img
-								src="img/mayoutfit-img.svg"
-								alt="Mayoutfit"
-							/>
+						<div class="swiper-slide">
+							<div class="card">
+								<img
+									src="img/mayoutfit-img.svg"
+									alt="Mayoutfit"
+								/>
+							</div>
 						</div>
-						<div class="card swiper-slide">
-							<img
-								src="img/zalora-img.svg"
-								alt="Zalora"
-							/>
+						<div class="swiper-slide">
+							<div class="card">
+								<img
+									src="img/zalora-img.svg"
+									alt="Zalora"
+								/>
+							</div>
 						</div>
-						<div class="card swiper-slide">
-							<img
-								src="img/geulis-img.svg"
-								alt="Geulis"
-							/>
+						<div class="swiper-slide">
+							<div class="card">
+								<img
+									src="img/geulis-img.svg"
+									alt="Geulis"
+								/>
+							</div>
 						</div>
-						<div class="card swiper-slide">
-							<img
-								src="img/zara-img.jpg"
-								alt="Zara"
-							/>
+						<div class="swiper-slide">
+							<div class="card">
+								<img
+									src="img/zara-img.jpg"
+									alt="Zara"
+								/>
+							</div>
 						</div>
-						<div class="card swiper-slide">
-							<img
-								src="img/ostin-img.png"
-								alt="Ostin"
-							/>
+						<div class="swiper-slide">
+							<div class="card">
+								<img
+									src="img/ostin-img.png"
+									alt="Ostin"
+								/>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -327,12 +342,24 @@
 					<div class="line lineleft"></div>
 					<div class="line lineleft"></div>
 				</div>
-				<div class="contact__form">
-					<p class="contact__form__text">text</p>
+				<form class="contact__form">
+					<div class="contact__input">
+						<input type="text" />
+						<label for="">Full name</label>
+					</div>
+					<div class="contact__input">
+						<input type="email" />
+						<label for="">Email address</label>
+					</div>
+					<div class="contact__input">
+						<input type="text" />
+						<label for="">Discription</label>
+					</div>
+
 					<button class="mybtn mybtn__shape_onecorner">
 						Send now
 					</button>
-				</div>
+				</form>
 			</section>
 		</div>
 
@@ -375,72 +402,15 @@
 			crossorigin="anonymous"
 		></script>
 
-		<div class="swiper mySwiper testimonial">
-			<div class="swiper-wrapper testimonial__cards">
-				<div class="card">
-					<img
-						src="img/zara-img.jpg"
-						alt="Zara"
-					/>
-				</div>
-
-				<div class="swiper-slide card">
-					<img
-						src="img/zara-img.jpg"
-						alt="Zara"
-					/>
-				</div>
-
-				<div class="swiper-slide card">
-					<img
-						src="img/zara-img.jpg"
-						alt="Zara"
-					/>
-				</div>
-
-				<div class="swiper-slide card">
-					<img
-						src="img/zara-img.jpg"
-						alt="Zara"
-					/>
-				</div>
-
-				<div class="swiper-slide card">
-					<img
-						src="img/zara-img.jpg"
-						alt="Zara"
-					/>
-				</div>
-
-				<div class="swiper-slide card">
-					<img
-						src="img/zara-img.jpg"
-						alt="Zara"
-					/>
-				</div>
-
-				<div class="swiper-slide card">
-					<img
-						src="img/zara-img.jpg"
-						alt="Zara"
-					/>
-				</div>
-			</div>
-			<!-- <div class="swiper-pagination"></div> -->
-		</div>
-
 		<script>
-			let swiper = new Swiper('.mySwiper', {
-				slidesPerView: 6,
-				spaceBetween: 30,
+			let swiper = new Swiper('#testimonial-swiper', {
 				loop: true,
-				freeMode: false,
-				freeModeMomentum: false,
 				autoplay: {
-					delay: 1,
-					disableOnInteraction: false,
+					delay: 0,
 				},
-				speed: 5000,
+				speed: 4000,
+				slidesPerView: 3,
+				allowTouchMove: false,
 			});
 		</script>
 	</body>

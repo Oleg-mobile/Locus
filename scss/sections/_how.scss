@@ -57,26 +57,4 @@
 			font-weight: bold;
 		}
 	}
-
-	&__btn-how {
-		border: none;
-		padding: 0px;
-		background: none;
-		background-image: url('/img/how_btn.svg');
-		cursor: pointer;
-		position: absolute;
-		top: 488px;
-		left: 66.6%;
-		transform: translateX(-50%);
-		transition: background linear 200ms;
-		width: 130px;
-		height: 130px;
-		background-position: center;
-		background-repeat: no-repeat;
-
-		&:hover {
-			//top: 473px;
-			background-image: url('/img//how_img_halo.svg');
-		}
-	}
 }

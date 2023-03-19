@@ -53,6 +53,14 @@
 					color: $primary-color;
 					font-size: 70px;
 					font-weight: 800;
+
+					&:before {
+						display: block;
+						content: attr(title);
+						height: 0px;
+						overflow: hidden;
+						visibility: hidden;
+					}
 				}
 
 				&-text {

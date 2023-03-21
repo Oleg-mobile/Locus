@@ -1,0 +1,39 @@
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+	&__info {
+		background-color: $primary-color;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		height: 80px;
+		width: 100%;
+		color: white;
+		font-size: 18px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		div + div {
+			margin-left: 20px;
+		}
+		a {
+			color: white;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+				border-bottom: 1px dashed white;
+			}
+		}
+	}
+
+	&__map {
+		width: 100%;
+
+		iframe {
+			width: 100%;
+			height: 250px;
+		}
+	}
+}

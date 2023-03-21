@@ -1,8 +1,18 @@
 .header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	margin-bottom: 105px;
+	position: relative;
+
+	.container-fluid {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	@media (max-width: 767px) {
+		.container-fluid {
+			padding: 0;
+		}
+	}
 
 	&__logo {
 		display: flex;
@@ -26,6 +36,42 @@
 		align-items: center;
 		margin-top: 9px;
 		margin-bottom: 0px;
+
+		@media (max-width: 767px) {
+			position: fixed;
+			flex-direction: column;
+			justify-content: center;
+			top: 0;
+			left: -100%;
+			width: 50%;
+			height: 100vh;
+		}
+	}
+
+	&__hamburger {
+		display: none;
+		background-color: $primary-color;
+
+		@media (max-width: 767px) {
+			display: block;
+			position: absolute;
+			top: 50%;
+			width: 26px;
+			right: 10px;
+			transform: translateY(-50%);
+			height: 12px;
+
+			span {
+				display: block;
+			}
+		}
+
+		span {
+			height: 2px;
+			width: 100%;
+			background-color: white;
+			margin-bottom: 2px;
+		}
 	}
 
 	&__link {

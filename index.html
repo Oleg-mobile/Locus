@@ -25,6 +25,12 @@
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
 		/>
+
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/tippy.js@6/animations/scale.css"
+		/>
+
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<title>Locus</title>
 		<link
@@ -33,8 +39,8 @@
 		/>
 	</head>
 	<body>
-		<div class="container-fluid">
-			<header class="header">
+		<header class="header">
+			<div class="container-fluid">
 				<div class="header__logo">
 					<img
 						class="header__img"
@@ -78,10 +84,17 @@
 							>
 						</li>
 					</ul>
+					<div class="header__hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
 				</nav>
 				<button class="mybtn">Sign Up</button>
-			</header>
+			</div>
+		</header>
 
+		<div class="container-fluid">
 			<section class="main">
 				<div class="main__content">
 					<h1 class="main__title">
@@ -382,6 +395,19 @@
 			</section>
 		</div>
 
+		<footer class="footer">
+			<div class="footer__info">
+				<div>street: Fake</div>
+				<div>phone: <a href="tel: 3222233322">3222233322</a></div>
+			</div>
+			<div class="footer__map">
+				<iframe
+					src="https://yandex.ru/map-widget/v1/?um=constructor%3A9b2d54f46ac4023dcc1de38c251a78a13ff1bf995782e51b09d5b0666f3c393a&amp;source=constructor"
+					frameborder="0"
+				></iframe>
+			</div>
+		</footer>
+
 		<!-- Modal -->
 		<div
 			class="modal fade"
@@ -428,6 +454,9 @@
 			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
 			crossorigin="anonymous"
 		></script>
+
+		<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+		<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 
 		<script src="js/index.js"></script>
 	</body>

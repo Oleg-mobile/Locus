@@ -52,3 +52,9 @@ document.addEventListener('scroll', function () {
 });
 
 checkAnimationNumbers();
+
+tippy('.btn-play', {
+	content: 'Play video',
+	theme: 'locus',
+	animation: 'scale',
+});

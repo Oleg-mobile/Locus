@@ -1,0 +1,24 @@
+.tippy-box[data-theme~='locus'] {
+	background-color: $text-how;
+	color: $background-how;
+	padding: 8px;
+	border-radius: 12px;
+	font-weight: bold;
+	font-family: Poppins;
+
+	&[data-placement^='top'] > .tippy-arrow::before {
+		border-top-color: $text-how;
+	}
+
+	&[data-placement^='bottom'] > .tippy-arrow::before {
+		border-bottom-color: $text-how;
+	}
+
+	&[data-placement^='left'] > .tippy-arrow::before {
+		border-left-color: $text-how;
+	}
+
+	&[data-placement^='right'] > .tippy-arrow::before {
+		border-right-color: $text-how;
+	}
+}

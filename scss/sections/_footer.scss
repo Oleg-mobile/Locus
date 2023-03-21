@@ -10,7 +10,7 @@
 		border-top-right-radius: 20px;
 		height: 80px;
 		width: 100%;
-		color: white;
+		color: $white-color;
 		font-size: 18px;
 		display: flex;
 		justify-content: center;
@@ -19,11 +19,11 @@
 			margin-left: 20px;
 		}
 		a {
-			color: white;
+			color: $white-color;
 			text-decoration: none;
 			&:hover {
 				text-decoration: none;
-				border-bottom: 1px dashed white;
+				border-bottom: 1px dashed $white-color;
 			}
 		}
 	}

@@ -10,7 +10,7 @@
 
 	@media (max-width: 767px) {
 		.container-fluid {
-			padding: 0;
+			padding: 30px;
 		}
 	}
 
@@ -36,8 +36,11 @@
 		align-items: center;
 		margin-top: 9px;
 		margin-bottom: 0px;
+		transition: left linear 500ms;
 
 		@media (max-width: 767px) {
+			align-items: start;
+			padding-left: 100px;
 			position: fixed;
 			flex-direction: column;
 			justify-content: center;
@@ -45,21 +48,27 @@
 			left: -100%;
 			width: 50%;
 			height: 100vh;
+			border: none;
+		}
+
+		&.active {
+			left: 0;
+			background-color: rgba(255, 255, 255, 0.5);
+			backdrop-filter: blur(6px);
 		}
 	}
 
 	&__hamburger {
 		display: none;
-		background-color: $primary-color;
 
 		@media (max-width: 767px) {
 			display: block;
 			position: absolute;
 			top: 50%;
-			width: 26px;
-			right: 10px;
+			width: 35px;
+			right: 20px;
 			transform: translateY(-50%);
-			height: 12px;
+			height: 24px;
 
 			span {
 				display: block;
@@ -67,10 +76,26 @@
 		}
 
 		span {
-			height: 2px;
+			height: 4px;
 			width: 100%;
-			background-color: $white-color;
-			margin-bottom: 2px;
+			background-color: $primary-color;
+			margin-bottom: 4px;
+			transition: all linear 500ms;
+		}
+
+		&.active {
+			span {
+				margin-bottom: -4px;
+				&:nth-child(1) {
+					transform: translateY(8px) rotate(-45deg);
+				}
+				&:nth-child(2) {
+					display: none;
+				}
+				&:nth-child(3) {
+					transform: translateY(8px) rotate(45deg);
+				}
+			}
 		}
 	}
 
@@ -79,6 +104,11 @@
 		color: $text-color;
 		font-size: 25px;
 		font-weight: 400;
+
+		@media (max-width: 767px) {
+			color: $primary-color;
+			font-size: 30px;
+		}
 
 		&::before {
 			display: block;
@@ -117,5 +147,21 @@
 
 	li + li {
 		margin-left: 85px;
+
+		@media (max-width: 767px) {
+			margin-left: 0;
+			margin-top: 15px;
+		}
+	}
+
+	.mybtn {
+		@media (max-width: 767px) {
+			position: absolute;
+			top: 50%;
+			right: 90px;
+			transform: translateY(-50%);
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
 	}
 }

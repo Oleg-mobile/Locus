@@ -31,6 +31,14 @@
 			href="https://unpkg.com/tippy.js@6/animations/scale.css"
 		/>
 
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+
 		<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 		<title>Locus</title>
 		<link
@@ -39,6 +47,10 @@
 		/>
 	</head>
 	<body>
+		<button class="button-top">
+			<i class="fa-solid fa-arrow-up fa-beat"></i>
+		</button>
+
 		<header class="header">
 			<div class="container-fluid">
 				<div class="header__logo">
@@ -54,7 +66,8 @@
 						<li>
 							<a
 								class="header__link"
-								href="#"
+								data-target="#home"
+								data-duration="1000"
 								title="Home"
 								>Home</a
 							>
@@ -62,7 +75,8 @@
 						<li>
 							<a
 								class="header__link"
-								href="#"
+								data-target="#contact"
+								data-duration="1500"
 								title="Contact"
 								>Contact</a
 							>
@@ -70,7 +84,8 @@
 						<li>
 							<a
 								class="header__link"
-								href="#"
+								data-target="#location"
+								data-duration="2000"
 								title="Location"
 								>Location</a
 							>
@@ -78,7 +93,8 @@
 						<li>
 							<a
 								class="header__link"
-								href="#"
+								data-target="#about"
+								data-duration="1000"
 								title="About Us"
 								>About Us</a
 							>
@@ -95,7 +111,10 @@
 		</header>
 
 		<div class="container-fluid">
-			<section class="main">
+			<section
+				class="main"
+				id="home"
+			>
 				<div class="main__content">
 					<h1 class="main__title">
 						Get the inspiration of interior design here
@@ -116,7 +135,7 @@
 				/>
 			</section>
 
-			<!-- <section class="how">
+			<section class="how">
 				<h1 class="how__title">How it works</h1>
 				<p class="how__text">
 					Spice up your space even simpler than you think
@@ -168,7 +187,10 @@
 				</div>
 			</section>
 
-			<section class="project">
+			<section
+				class="project"
+				id="about"
+			>
 				<div class="project__preview">
 					<h1 class="project__preview-title">Our project</h1>
 					<p class="project__preview-text">
@@ -365,7 +387,10 @@
 				</div>
 			</section>
 
-			<section class="contact">
+			<section
+				class="contact"
+				id="contact"
+			>
 				<div class="contact__content">
 					<h1 class="contact__content__header">Contact Us</h1>
 					<p class="contact__content__text">
@@ -395,7 +420,10 @@
 			</section>
 		</div>
 
-		<footer class="footer">
+		<footer
+			class="footer"
+			id="location"
+		>
 			<div class="footer__info">
 				<div>street: Fake</div>
 				<div>phone: <a href="tel: 3222233322">3222233322</a></div>
@@ -406,7 +434,7 @@
 					frameborder="0"
 				></iframe>
 			</div>
-		</footer> -->
+		</footer>
 
 		<!-- Modal -->
 		<div
@@ -458,6 +486,9 @@
 		<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
 		<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
 
-		<script src="js/index.js"></script>
+		<script
+			src="js/index.js"
+			type="module"
+		></script>
 	</body>
 </html>

@@ -1,6 +1,22 @@
 .header {
 	margin-bottom: 105px;
 	position: relative;
+	max-height: 140px;
+
+	&.fixed {
+		position: fixed;
+		width: 100%;
+		top: 0;
+		margin-bottom: 0;
+		background-color: $white-color;
+		box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.07);
+		z-index: 9999;
+
+		.container-fluid {
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+	}
 
 	.container-fluid {
 		display: flex;

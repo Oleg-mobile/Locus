@@ -41,3 +41,17 @@
 		background-image: url('/img//how_img_halo.svg');
 	}
 }
+
+.button-top {
+	border-radius: 50%;
+	color: $white-color;
+	padding: 15px;
+	background-color: $primary-color;
+	border: none;
+	display: none;
+	position: fixed;
+	right: 60px;
+	bottom: 80px;
+	width: 80px;
+	height: 80px;
+}

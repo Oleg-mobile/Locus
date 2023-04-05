@@ -14,7 +14,8 @@ body {
 }
 
 // Components
-@import 'components/btn', 'components/card', 'components/line';
+@import 'components/btn', 'components/card', 'components/line',
+	'components/loader';
 
 // Sections
 @import 'sections/header', 'sections/main', 'sections/how', 'sections/mission',
